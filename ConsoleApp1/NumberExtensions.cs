@@ -8,4 +8,12 @@ public class NumberExtensions
 
         return numbers.Average();
     }
+    
+    public static int GetMax(int[] numbers)
+    {
+        if (numbers.Length == 0)
+            throw new ArgumentException("Array cannot be null or empty");
+
+        return numbers.Max();
+    }
 }
