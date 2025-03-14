@@ -1,6 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using ConsoleApp1;
 
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
+Console.WriteLine(NumberExtensions.GetAverage([1,2,3,4]));
