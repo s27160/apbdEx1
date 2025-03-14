@@ -16,4 +16,9 @@ public class NumberExtensions
 
         return numbers.Max();
     }
+    
+    public static int GetMin(int[] numbers)
+    {
+        return 0; 
+    }
 }
