@@ -12,13 +12,16 @@ public class NumberExtensions
     public static int GetMax(int[] numbers)
     {
         if (numbers.Length == 0)
-            throw new ArgumentException("Array cannot be null or empty");
+            throw new ArgumentException("Array cannot be empty");
 
         return numbers.Max();
     }
     
     public static int GetMin(int[] numbers)
     {
-        return 0; 
+        if (numbers.Length == 0)
+            throw new ArgumentException("Array cannot be empty");
+
+        return numbers.Min();
     }
 }
